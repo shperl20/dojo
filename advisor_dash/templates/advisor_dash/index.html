@@ -1,0 +1,9 @@
+{% if latest_advisor_list %}
+    <ul>
+    {% for advisor in latest_advisor_list %}
+        <li><a href="{% url 'detail' advisor.dly_advisor_dashboard_key %}>{{ advisor.advisor_email }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No advisors are available.</p>
+{% endif %}

@@ -1,0 +1,10 @@
+<h1>{{ advisor.advisor_email }}</h1>
+<ul>
+{% for advisor in advisor.all %}
+    <li> {{ advisor.advisor_email }} </li>
+    <li> {{ advisor.advisor_first_name }} </li>
+    <li> {{ advisor.advisor_last_name }} </li>
+    <li> {{ advisor.vendor_name }} </li>
+    <li> {{ advisor.advisor_key >> </li>
+{% endfor %}
+</ul>
